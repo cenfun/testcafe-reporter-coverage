@@ -17,5 +17,5 @@ testcafe chrome:headless:cdpPort=9223 tests/*.test.js -r spec,coverage
 ```
 ### Note
 - `cdpPort` defaults to `9223`, see also coverage config [mcr.config.js](mcr.config.js)
-- The coverage data uses the native v8 coverage data, so the browser requires `chromium` only.
+- The coverage data uses the native v8 coverage data, so it requires chromium-based browser like chrome, edge or chromium.
 - Check [monocart coverage reports](https://github.com/cenfun/monocart-coverage-reports) for more coverage options.
