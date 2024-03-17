@@ -1,0 +1,30 @@
+{
+    "name": "testcafe-reporter-coverage",
+    "version": "1.0.0",
+    "description": "A testcafe custom reporter for monocart coverage reports",
+    "main": "./lib/index.js",
+    "exports": {
+        ".": {
+            "default": "./lib/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "scripts": {
+        "link": "sf link .",
+        "test": "testcafe chrome:headless:cdpPort=9223 tests/*.test.js -r spec,coverage",
+        "patch": "npm run test && sf publish patch -r"
+    },
+    "files": [
+        "lib"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "monocart-coverage-reports": "^2.7.3"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "eslint-config-plus": "^1.0.6",
+        "eslint-plugin-html": "^8.0.0",
+        "testcafe": "^3.5.0"
+    }
+}
