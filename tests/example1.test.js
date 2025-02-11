@@ -13,3 +13,12 @@ test('My first test', async (t) => {
         // Use the assertion to check if actual header text equals expected text
         .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');
 });
+
+test('My second first test', async (t) => {
+    await t
+        .typeText('#developer-name', 'John Smith')
+        .click('#submit-button')
+
+        // Use the assertion to check if actual header text equals expected text
+        .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');
+});
