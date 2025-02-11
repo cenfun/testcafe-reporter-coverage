@@ -1,6 +1,6 @@
 {
     "name": "testcafe-reporter-coverage",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A testcafe custom reporter for monocart coverage reports",
     "main": "./lib/index.js",
     "exports": {
