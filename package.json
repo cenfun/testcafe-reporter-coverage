@@ -19,12 +19,11 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "monocart-coverage-reports": "^2.7.3"
+        "monocart-coverage-reports": "^2.12.1"
     },
     "devDependencies": {
-        "eslint": "^8.57.0",
-        "eslint-config-plus": "^1.0.6",
-        "eslint-plugin-html": "^8.0.0",
-        "testcafe": "^3.5.0"
+        "eslint": "^9.20.0",
+        "eslint-config-plus": "^2.0.2",
+        "testcafe": "^3.7.1"
     }
 }
